@@ -15,3 +15,4 @@ $ python manage.py collectstatic
 
 $ python manage.py runserver
 ```
+2. Open your browser and go to http://localhost:8080 or http://127.0.0.1:8080
