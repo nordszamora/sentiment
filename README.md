@@ -15,4 +15,4 @@ $ python manage.py collectstatic
 
 $ python manage.py runserver
 ```
-2. Open your browser and go to http://localhost:8080
+2. Open your browser and paste it on address bar http://localhost:8000
