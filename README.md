@@ -1,3 +1,4 @@
-# Sentiment ML model
-## Quick Start
-Install this project on your local machine
+# FuzzTester
+### Introduction
+**FuzzTester** is a pentesting tool that used for send a randomize payloads to trigger the vulnerability
+### Installation
