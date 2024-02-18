@@ -1,6 +1,9 @@
 # Sentiment ML model
 ### Quick Start
 Install this project on your local machine and here are following steps.
+
+1. Run following commands
+
 ```
 $ git clone https://github.com/nordszamora/sentiment
 
