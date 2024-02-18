@@ -1,5 +1,5 @@
 # Sentiment ML model
-This ML project is used to predict the text sentiment positive, negative or neutral. Its used a Reddit dataset in kaggle to train the model and make a prediction on new/unseen data.
+This ML project is used to predict the text sentiment positive, negative, or neutral. It uses a [Reddit dataset](https://www.kaggle.com/datasets/cosmos98/twitter-and-reddit-sentimental-analysis-dataset?select=Reddit_Data.csv) from Kaggle to train the model and make predictions on new/unseen data.
 ### Quick Start
 Install this project on your local machine and here are following steps.
 
