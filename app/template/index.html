@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+
+        <title>Sentiment Analysis</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sentiment Analysis">
+        <meta name="author" content="Nords Zamora">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/custom.css' %}"/>
+    </head>
+    <body class="bg-dark">
+        <div class="container-fluid">
+          <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <a class="navbar-brand text-danger" href="../">SEN<span class="text-warning">TIMENT</span></a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="https://github.com/nordszamora/" class="text-white">{% load bootstrap_icons %} {% bs_icon 'github' size='1.3em' %}</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="row">
+            <div class="d-flex justify-content-center">
+              <div class="col-sm-9 col-md-6 mt-3">
+                <form action="{% url 'prediction' %}" method="post">
+                   {% csrf_token %}
+                   <div class="mb-3">
+                     <textarea class="form-control bg-dark border text-white" rows="3" name="text" placeholder="You're Text..."></textarea>
+                     <div class="text-danger">{{error}}</div>
+                   </div>
+                   <div class="text-center">
+                     <button class="btn btn-danger">Predict</button>
+                   </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

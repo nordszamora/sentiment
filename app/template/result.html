@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% load static %}
+        {% load bootstrap5 %}
+        {% bootstrap_css %}
+        {% bootstrap_javascript %}
+
+        <title>Prediction</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Sentiment Analysis">
+        <meta name="author" content="Nords Zamora">
+    </head>
+    <body class="bg-dark">
+        <div class="container-fluid">
+          <div class="row">
+
+            <div class="d-flex justify-content-center text-white mt-3">
+              {% if result == 0 %}
+                 <h1>Predicted : <span class="text-info">Neutral</span></h1>
+
+              {% elif result == 1 %}
+                <h1>Predicted : <span class="text-primary">Positive</span></h1>
+                 
+              {% elif result == -1 %}
+                <h1>Predicted : <span class="text-danger">Negative</span></h1>
+              {% endif %}
+            </div>
+
+            <a href="../" class="text-white text-center">Back</a>
+          </div>
+        </div>
+    </body>
+</html>
