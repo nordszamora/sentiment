@@ -2,7 +2,7 @@
 ### Quick Start
 Install this project on your local machine and here are following steps.
 
-1. Run following commands
+1. Run the following commands
 
 ```
 $ git clone https://github.com/nordszamora/sentiment
