@@ -1,4 +1,3 @@
 # FuzzTester
 ### Quick Start
-**FuzzTester** is a pentesting tool that used for send a randomize payloads to trigger the vulnerability
-### Installation
+Install this porject on your local machine and here are following installation steps.
